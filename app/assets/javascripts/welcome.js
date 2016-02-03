@@ -24,8 +24,8 @@ app.controller('ContactsController', ['$scope', '$http', function($scope, $http)
 
     $scope.deleteContact = function(index) {
 
-        var contact = $scope.contacts[index]
-        $http.delete(contact)
+        var contact = $scope.contacts[index];
+        $http.delete('/api/contacts/' + contact.id);
         $scope.contacts.splice(index, 1);
       };
 

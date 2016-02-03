@@ -13,6 +13,99 @@
  *= require_tree .
  *= require_self
  */
-#list-view{
-  margin: 10px;
+body{
+  text-align: center;
+  background-color: gold;
+  padding:0;
+  margin: 0;
+}
+header{
+  color:gold;
+  background-color: black;
+  margin-bottom: 0.5em;
+  width: 100%;
+  /*margin-right: -2em;
+  margin-left: -2em;*/
+  padding: 0.25em 0;
+}
+
+img{
+  border-radius: 50%;
+  border-bottom: 1px solid black;
+  height: 150px;
+  width: 150px;
+}
+p{
+  margin-top: -5px;
+}
+h5{
+  margin-bottom: -3px;
+}
+.container{
+  background-color: whitesmoke;
+  padding: 2em;
+}
+.each-contact{
+  margin: 3px;
+}
+form{
+  background-color: whitesmoke;
+  text-align: center;
+}
+button{
+  border-radius: 100px;
+}
+#email-phone{
+  padding-left: 320px;
+}
+
+#end-entry{
+  height: 2em;
+}
+#btn-delete:hover{
+  border-color: red;
+  color: red;
+}
+#search{
+  text-align: center;
+  border-radius: 100px;
+  margin: 0 0 0.5em 0;
+  background-color: white;
+  padding: 0 3em;
+
+}
+
+label {
+	display:block;
+	margin:20px 0 0;
+  padding-bottom: 10px;
+	border-bottom:1px solid lightgrey;
+}
+label:hover {
+cursor: pointer;
+}
+#item-1{
+font-size: 36px;
+font-weight: 300;
+	position:absolute;
+	left:-999em
+}
+.hide {
+
+	border-bottom:1px solid lightgrey;
+	max-height:999em;
+	opacity:1;
+	height:auto;
+	overflow:hidden;
+	transition:opacity .25s linear;
+}
+.hide form {
+	padding:10px;
+	margin:0
+}
+input[type=checkbox]:checked + div {
+	opacity:0;
+	max-height:0;
+	border:none;
+	transition:opacity .5s linear, max-height .5s linear;
 }
