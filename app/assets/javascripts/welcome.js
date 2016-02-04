@@ -29,6 +29,4 @@ app.controller('ContactsController', ['$scope', '$http', function($scope, $http)
         $scope.contacts.splice(index, 1);
       };
 
-
-
 }]);
