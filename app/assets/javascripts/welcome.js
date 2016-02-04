@@ -19,6 +19,7 @@ app.controller('ContactsController', ['$scope', '$http', function($scope, $http)
       $http.post('/api/contacts', {contact: $scope.newContact}).then(function(response){
         var data = response.data;
         $scope.contacts.push( data );
+        $scope.newContact ={};
       });
     };
 
