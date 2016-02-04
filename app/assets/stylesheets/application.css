@@ -53,6 +53,7 @@ form{
   text-align: center;
 }
 button{
+padding: 0 55px;
   border-radius: 100px;
 }
 #email-phone{

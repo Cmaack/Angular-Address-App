@@ -8,7 +8,7 @@
 
   <div class="row">
     <div class="twelve columns">
-      <input id="search"type="search" name="contactSearch" value=""placeholder="search">
+      <input id="search"type="text" name="contactSearch" value="" ng-model="searchBox" placeholder="search">
     </div>
   </div>
 
@@ -85,7 +85,7 @@
 
 <div class="container">
   <div class="each-contact">
-    <div ng-repeat="contact in contacts">
+    <div ng-repeat="contact in contacts | filter: searchBox">
 
       <div class="row">
         <div class="twelve columns">
