@@ -13,7 +13,7 @@ class Api::ContactsController < ApplicationController
 
   def destroy
       Contact.destroy(params[:id])
-
+      render :nothing => true, :status => 204
     end
 
   private
