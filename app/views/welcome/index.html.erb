@@ -64,7 +64,14 @@
                   </div>
 
                   <div class="row">
-                    <button class="button-primary" type="submit">Save Contact</button>
+                    <div class="six columns">
+                      <input class="u-full-width" type="text" value="" ng-model="newContact.url"  placeholder="Image url">
+                    </div>
+                    <div class="six columns">
+
+
+                      <button class="button-primary" type="submit">Save Contact</button>
+                    </div>
                   </div>
                 </form>
         </div><!-- end FORM container -->
@@ -84,7 +91,7 @@
         <div class="twelve columns">
           <div class="contact-info" >
             <h4> {{ contact.first_name }} {{ contact.last_name }} </h4>
-            <img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png">
+            <img src="{{ contact.url }}">
           </div>
         </div>
       </div>
