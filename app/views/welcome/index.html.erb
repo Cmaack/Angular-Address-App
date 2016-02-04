@@ -50,28 +50,30 @@
                       <input  class="u-full-width" type="text" value="" ng-model="newContact.street_address"  placeholder="Street">
                     </div>
                     <div class="six columns">
-                      <input class="u-full-width" type="text" value="" ng-model="newContact.state"  placeholder="State">
+                      <input class="u-full-width" type="text" value="" ng-model="newContact.city"  placeholder="City">
                     </div>
                   </div>
 
                   <div class="row">
+                    <div class="six columns">
+                      <input class="u-full-width" type="text" value="" ng-model="newContact.state"  placeholder="State">
+                    </div>
                     <div class="six columns">
                       <input class="u-full-width" type="text" value="" ng-model="newContact.zip"  placeholder="Zip">
                     </div>
-                    <div class="six columns">
-                      <input class="u-full-width" type="text" value="" ng-model="newContact.country"  placeholder="Country">
-                    </div>
                   </div>
 
                   <div class="row">
                     <div class="six columns">
-                      <input class="u-full-width" type="text" value="" ng-model="newContact.url"  placeholder="Image url">
+                      <input class="u-full-width" type="text" value="" ng-model="newContact.country"  placeholder="Country">
                     </div>
                     <div class="six columns">
-
-
-                      <button class="button-primary" type="submit">Save Contact</button>
+                      <input class="u-full-width" type="text" value="" ng-model="newContact.url"  placeholder="Image url">
                     </div>
+
+                  </div>
+                  <div class="row">
+                    <button class="button-primary" type="submit">Save Contact</button>
                   </div>
                 </form>
         </div><!-- end FORM container -->
@@ -111,7 +113,7 @@
     <div class="row" id="address">
       <div class="twelve columns">
       <!-- <div class="address" id="address"> -->
-        <p>{{ contact.street_address }}, {{ contact.city }} {{ contact.state }} | {{ contact.zip }}</h5>
+        <p>{{ contact.street_address }} {{ contact.city }}, {{ contact.state }} | {{ contact.zip }}</h5>
         <p>{{ contact.country}}</p>
       <!-- </div> -->
         <div class="remove">
